@@ -1,0 +1,134 @@
+﻿@model StudentsRegister
+
+<form method="post" class="col">
+    <input asp-for="Id" hidden />
+    <div class="row">
+        <div class="border p-3 mt-4 col-6">
+            <div class="row mb-2">
+                <h2 class="text-primary p-0">Delete</h2>
+                <hr />
+            </div>
+            <div class="mb-3">
+                <label asp-for="StudentCode" class="p-0"></label>
+                <input asp-for="StudentCode" disabled class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Name" class="p-0"></label>
+                <input asp-for="Name" disabled class="form-control" />
+                
+            </div>
+            <div class="mb-3">
+                <label asp-for="Family" class="p-0"></label>
+                <input asp-for="Family" disabled class="form-control" />
+               
+            </div>
+            <div class="mb-3">
+                <label asp-for="FathersName" class="p-0"></label>
+                <input asp-for="FathersName" disabled class="form-control" />
+               
+            </div>
+            <div class="mb-3">
+                <label asp-for="Gender" class="p-0"></label>
+                <input asp-for="Gender" disabled class="form-control" />
+                
+            </div>
+            <div class="mb-3">
+                <label asp-for="NationalCard">National ID</label>
+                <input asp-for="NationalCard" disabled class="form-control" />
+                
+            </div>
+            <div class="mb-3">
+                <label asp-for="IdCard" class="p-0">ID Card</label>
+                <input asp-for="IdCard" disabled class="form-control" />
+                
+            </div>
+            <div class="mb-3">
+                <label asp-for="BirthPlace" class="p-0"></label>
+                <input asp-for="BirthPlace" disabled class="form-control" />
+                
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-10">
+                    <button type="submit" class="btn btn-danger form-control">Delete</button>
+                </div>
+
+                @*   <div class="col-6">
+
+
+                </div> *@
+            </div>
+        </div>
+
+
+        <div class="border p-3 mt-4 col-6">
+            <div class="row mb-2">
+                <h2 class="text-primary p-0">Student</h2>
+                <hr />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Age" class="p-0"></label>
+                <input asp-for="Age" disabled class="form-control" />
+                
+            </div>
+            <div class="mb-3">
+                <label asp-for="Education" class="p-0"></label>
+                <input asp-for="Education" disabled class="form-control" />
+                
+            </div>
+            <div class="mb-3">
+                <label asp-for="RegisterCource" class="p-0"></label>
+                <input asp-for="RegisterCource" disabled class="form-control" />
+                
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="PhoneNumber" class="p-0"></label>
+                <input asp-for="PhoneNumber" disabled class="form-control" />
+                
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="CellPhone" class="p-0"></label>
+                <input asp-for="CellPhone" disabled class="form-control" />
+                
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="Address" class="p-0"></label>
+                <input asp-for="Address" disabled class="form-control" />
+               
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="Fee" class="p-0"></label>
+                <input asp-for="Fee" disabled class="form-control" />
+               
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="Img" class="p-0"></label>
+                <input asp-for="Img" disabled class="form-control" />
+            </div>
+
+            <div class="row">
+                @* <div class="col-6">
+
+                </div> *@
+                <div class="col-10">
+                    <a asp-controller="Studentsregister" asp-action="Index" class="btn btn-outline-secondary form-control">
+                        Back To List
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</form>
+
+

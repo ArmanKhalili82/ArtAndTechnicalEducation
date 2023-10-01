@@ -1,0 +1,146 @@
+﻿@model StudentsRegister
+
+<form method="post" class="col">
+    <input asp-for="Id" hidden />
+    <div class="row">
+        <div class="border p-3 mt-4 col-6">
+            <div class="row mb-2">
+                <h2 class="text-primary p-0">Edit</h2>
+                <hr />
+            </div>
+            <div class="mb-3">
+                <label asp-for="StudentCode" class="p-0"></label>
+                <input asp-for="StudentCode" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Name" class="p-0"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Family" class="p-0"></label>
+                <input asp-for="Family" class="form-control" />
+                <span asp-validation-for="Family" class="text-danger"></span>
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="FathersName" class="p-0"></label>
+                <input asp-for="FathersName" class="form-control" />
+                <span asp-validation-for="FathersName" class="text-danger"></span>
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="Gender" class="p-0"></label>
+                <input asp-for="Gender" class="form-control" />
+                <span asp-validation-for="Gender" class="text-danger"></span>
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="NationalCard">National ID</label>
+                <input asp-for="NationalCard" class="form-control" />
+                <span asp-validation-for="NationalCard" class="text-danger"></span>
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="IdCard" class="p-0">ID Card</label>
+                <input asp-for="IdCard" class="form-control" />
+                <span asp-validation-for="IdCard" class="text-danger"></span>
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="BirthPlace" class="p-0"></label>
+                <input asp-for="BirthPlace" class="form-control" />
+                <span asp-validation-for="BirthPlace" class="text-danger"></span>
+
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-10">
+                    <button type="submit" class="btn btn-primary form-control">Update</button>
+                </div>
+
+                @*   <div class="col-6">
+
+
+                </div> *@
+            </div>
+        </div>
+
+
+        <div class="border p-3 mt-4 col-6">
+            <div class="row mb-2">
+                <h2 class="text-primary p-0">Student</h2>
+                <hr />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Age" class="p-0"></label>
+                <input asp-for="Age" class="form-control" />
+                <span asp-validation-for="Age" class="text-danger"></span>
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="Education" class="p-0"></label>
+                <input asp-for="Education" class="form-control" />
+                <span asp-validation-for="Education" class="text-danger"></span>
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="RegisterCource" class="p-0"></label>
+                <input asp-for="RegisterCource" class="form-control" />
+                <span asp-validation-for="RegisterCource" class="text-danger"></span>
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="PhoneNumber" class="p-0"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="CellPhone" class="p-0"></label>
+                <input asp-for="CellPhone" class="form-control" />
+                <span asp-validation-for="CellPhone" class="text-danger"></span>
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="Address" class="p-0"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="Fee" class="p-0"></label>
+                <input asp-for="Fee" class="form-control" />
+                <span asp-validation-for="Fee" class="text-danger"></span>
+
+            </div>
+            <div class="mb-3">
+                <label asp-for="Img" class="p-0"></label>
+                <input asp-for="Img" class="form-control" />
+            </div>
+
+            <div class="row">
+                @* <div class="col-6">
+
+                </div> *@
+                <div class="col-10">
+                    <a asp-controller="Studentsregister" asp-action="Index" class="btn btn-outline-secondary form-control">
+                        Back To List
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
